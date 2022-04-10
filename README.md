@@ -6,8 +6,8 @@ relevant for supercomputer operators as well as users is collected here.
 There is no guarantee for permanence or that information here is up-to-date,
 neither for a useful ordering and/or categorization of issues.
 
-## For operators
 
+## For operators
 
 ### Official Julia binaries vs. building from source
 According to 
@@ -103,17 +103,20 @@ https://gitlab.blaschke.science/nersc/julia/-/tree/main/modulefiles
 The following is an (incomplete) list of HPC systems that provide a Julia
 installation and/or support for using Julia to its users:
 
-**Center** | **System** | **Installation** | **Support** | **Architecture** | **Accelerators** | **Documentation**
------|-----|-----|-----|-----|-----|-----
-[NERSC](https://www.nersc.gov) | [Cori](https://www.nersc.gov/systems/cori/) | yes | ? | ? | ? | ?
-[NERSC](https://www.nersc.gov) | [Permutter](https://www.nersc.gov/systems/perlmutter/) | yes | yes | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
-[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | yes | ? | ? | ? | ?
+**Center** | **System** | **Installation** | **Support** | **Interactive** | **Architecture** | **Accelerators** | **Documentation**
+-----|-----|-----|-----|-----|-----|-----|-----
+[CSCS](https://www.cscs.ch) | [Piz Daint](https://www.cscs.ch/computers/piz-daint/) | yes | ? | yes | [Intel Xeon Broadwell + Haswell](https://www.cscs.ch/computers/piz-daint/) | [Nvidia Tesla P100](https://www.cscs.ch/computers/piz-daint/) | [1](https://user.cscs.ch/tools/interactive/julia/)
+[NERSC](https://www.nersc.gov) | [Cori](https://www.nersc.gov/systems/cori/) | yes | ? | ? | ? | ? | ?
+[NERSC](https://www.nersc.gov) | [Permutter](https://www.nersc.gov/systems/perlmutter/) | yes | yes | ? | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia Ampere A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
+[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | yes | ? | ? | ? | ? | ?
+[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | ? | ? | ? | ? | ? | ?
 
 **Nomenclature:**
 * *Center:* The HPC center's name
 * *System:* The compute system's "marketing" name
 * *Installation:* Is there a pre-installed Julia configuration available?
 * *Support:* Is Julia **officially** supported on the system?
+* *Interactive:* Is interactive computing with Julia supported?
 * *Architecture:* The main CPU used in the system
 * *Accelerators:* The main accelerator (if anything) in the system
 * *Documentation:* Links to documentation for Julia users
