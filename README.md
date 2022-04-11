@@ -13,10 +13,15 @@ neither for a useful ordering and/or categorization of issues.
 According to 
 [this Discourse post](https://discourse.julialang.org/t/compiling-julia-using-lto-pgo/39168/5),
 the difference between compiling Julia from source with architecture-specific
-optimization and using the official Julia binaries is negligible. Since
-installing from source using, e.g., Spack, can sometimes be cumbersome, the
-general recommendation is to go with the pre-built binaries unless benchmarked
-and found to be different.
+optimization and using the official Julia binaries is negligible.
+This has been confirmed by [Ludovic Räss](#acknowledgments) for an Nvidia DGX-1
+system at CSCS, where also no performance differences between a Spack-installed
+version and the official binaries were found (April 2022).
+
+Since installing from source using, e.g., Spack, can sometimes be cumbersome,
+the general recommendation is to go with the pre-built binaries unless
+benchmarked and found to be different.
+
 * This is also the current approach on NERSC's systems
 
 *Last update: April 2022*
@@ -63,11 +68,23 @@ requirement, since it is not used universally (e.g., it is not necessary on NERS
 
 
 ### Julia depot path
-The Julia folder (typically `~/.julia`) may very well reside in the user's home
-directory. In case multiple platforms share a single home directory, it might
+There is no clear consensus where the Julia depot folder (by default on
+Unix-like systems: `~/.julia`) should be located.  On some systems that have
+good I/O connectivity, it resides in the user's home directory, e.g., at NERSC.
+On other systems, e.g., at CSCS, it is put on a scratch file system. At the time
+of writing (April 2022), there does not seem to be reliable performance data
+available that could help to make a data-based decision.
+
+If the depot path, which can be controlled by the
+[`JULIA_DEPOT_PATH`](https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH)
+variable, is located on a scratch/workspace file system with automatic deletion
+of unused files, it must be ensured that there is a mechanism (either
+operator-provided or documented and in userspace) to prevent the deletion of
+files.
+In case multiple platforms share a single home directory, it might
 make sense to make the depot path platform dependend by setting the
 `JULIA_DEPOT_PATH` environment variable appropriately, e.g.,
-```tcl
+```
 prepend-path JULIA_DEPOT_PATH $env(HOME)/.julia/$platform
 ```
 where `$platform` contains the current system name
@@ -130,6 +147,8 @@ installation and/or support for using Julia to its users:
 These people have provided valuable input to this repository via private communication:
 * Mosè Giordano ([@giordano](https://github.com/giordano))
 * Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
+* Ludovic Räss [[@luraess](https://github.com/luraess))
+* Valentin Churavy [[@vchuravy](https://github.com/vchuravy))
 
 ## Disclaimer
 
