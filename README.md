@@ -97,6 +97,20 @@ environment, which is loaded through a settings module. More information on the
 NERSC module file setup can be found [here](#modules-file-setup).
 
 
+### CUDA.jl
+It seems to be generally advisable to set the environment variable
+```bash
+JULIA_CUDA_USE_BINARYBUILDER=false
+```
+in the module files when loading Julia on a system with GPUs. Otherwise, Julia
+will try to download its own BinaryBuilder.jl-provided CUDA stack, which is
+typically *not* what you want on a production HPC system. Instead, you should
+make sure that Julia finds the local CUDA installation by setting relevant
+environment variables (see also the
+[CUDA.jl
+docs](https://cuda.juliagpu.org/stable/installation/troubleshooting/#Could-not-find-a-suitable-CUDA-installation)).
+
+
 ### Modules file setup
 [Johannes Blaschke](https://github.com/jblaschke) provides scripts and
 templates to set up modules file for Julia on some of NERSC's systems:<br>
