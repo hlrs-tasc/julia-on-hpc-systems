@@ -117,6 +117,17 @@ templates to set up modules file for Julia on some of NERSC's systems:<br>
 https://gitlab.blaschke.science/nersc/julia/-/tree/main/modulefiles
 
 
+### Easybuild resources
+[Samuel Omlin](https://github.com/omlins) and colleagues from CSCS provide their
+Easybuild configuration files used for Piz Daint online at
+https://github.com/eth-cscs/production/tree/master/easybuild/easyconfigs/j/Julia. For example, there are configurations available for
+[Julia 1.7.2](https://github.com/eth-cscs/production/blob/d6d0802746db0dcdea1cf1711ae1d21858058fcf/easybuild/easyconfigs/j/Julia/Julia-1.7.2-CrayGNU-21.09.eb)
+and for
+[Julia 1.7.2 with CUDA support](https://github.com/eth-cscs/production/blob/d6d0802746db0dcdea1cf1711ae1d21858058fcf/easybuild/easyconfigs/j/Julia/Julia-1.7.2-CrayGNU-21.09-cuda.eb).
+Looking at these files also helps to decide which kind of environment variables
+are useful to set.
+
+
 ### Further resources
 * There is a lengthy discussion on the Julia Discourse about how to set up a
   centralized Julia installation. Some of it is already dated (probably), but
@@ -159,10 +170,11 @@ installation and/or support for using Julia to its users:
 ## Acknowledgments
 
 These people have provided valuable input to this repository via private communication:
-* Mosè Giordano ([@giordano](https://github.com/giordano))
 * Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
-* Ludovic Räss [[@luraess](https://github.com/luraess))
-* Valentin Churavy [[@vchuravy](https://github.com/vchuravy))
+* Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
+* Mosè Giordano ([@giordano](https://github.com/giordano))
+* Ludovic Räss ([@luraess](https://github.com/luraess))
+* Samuel Omlin ([@omlins](https://github.com/omlins))
 
 ## Disclaimer
 
