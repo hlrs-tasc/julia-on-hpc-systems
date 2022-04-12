@@ -177,6 +177,7 @@ installation and/or support for using Julia to its users:
 
 These people have provided valuable input to this repository via private communication:
 * Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
+* Carsten Bauer ([@carstenbauer](https://github.com/carstenbauer))
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
 * Ludovic Räss ([@luraess](https://github.com/luraess))
