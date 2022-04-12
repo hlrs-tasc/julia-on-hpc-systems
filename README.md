@@ -116,6 +116,12 @@ docs](https://cuda.juliagpu.org/stable/installation/troubleshooting/#Could-not-f
 templates to set up modules file for Julia on some of NERSC's systems:<br>
 https://gitlab.blaschke.science/nersc/julia/-/tree/main/modulefiles
 
+There are a number of environment variables that should be considered to be set
+through the module mechanism:
+* [`JULIA_DEPOT_PATH`](#julia-depot-path): Ensure depot path is on the correct file
+                                           system
+* [`JULIA_CUDA_USE_BINARYBUILDER`](#cudajl): Use system-provided CUDA stack
+
 
 ### Easybuild resources
 [Samuel Omlin](https://github.com/omlins) and colleagues from CSCS provide their
@@ -148,10 +154,10 @@ installation and/or support for using Julia to its users:
 **Center** | **System** | **Installation** | **Support** | **Interactive** | **Architecture** | **Accelerators** | **Documentation**
 -----|-----|-----|-----|-----|-----|-----|-----
 [CSCS](https://www.cscs.ch) | [Piz Daint](https://www.cscs.ch/computers/piz-daint/) | yes | ? | yes | [Intel Xeon Broadwell + Haswell](https://www.cscs.ch/computers/piz-daint/) | [Nvidia Tesla P100](https://www.cscs.ch/computers/piz-daint/) | [1](https://user.cscs.ch/tools/interactive/julia/)
-[NERSC](https://www.nersc.gov) | [Cori](https://www.nersc.gov/systems/cori/) | yes | ? | ? | ? | ? | ?
+[NERSC](https://www.nersc.gov) | [Cori](https://www.nersc.gov/systems/cori/) | yes | ? | ? | [Intel Xeon Haswell](https://docs.nersc.gov/systems/cori/#system-specification) | [Intel Xeon Phi](https://docs.nersc.gov/systems/cori/#system-specification) | [1](https://docs.nersc.gov/development/languages/julia/)
 [NERSC](https://www.nersc.gov) | [Permutter](https://www.nersc.gov/systems/perlmutter/) | yes | yes | ? | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia Ampere A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
-[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | yes | ? | ? | ? | ? | ?
-[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | ? | ? | ? | ? | ? | ?
+[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | yes | ? | yes | [Intel Xeon Skylake](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | [Intel Stratix 10](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | [1](https://wikis.uni-paderborn.de/pc2doc/Julia)
+[PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | ? | ? | ? | [AMD EPYC Milan](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [Nvidia Ampere A100](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2), [Xilinx Alveo U280](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [1](https://wikis.uni-paderborn.de/pc2doc/Julia)
 
 **Nomenclature:**
 * *Center:* The HPC center's name
