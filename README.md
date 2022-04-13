@@ -170,19 +170,31 @@ installation and/or support for using Julia to its users:
 * *Accelerators:* The main accelerator (if anything) in the system
 * *Documentation:* Links to documentation for Julia users
 
+
+## License and contributing
+
+The contents of this repository are published under the MIT license (see
+[LICENSE](LICENSE)). Our main goal is to publicly curate information on
+using Julia on HPC systems, as a service *from* the community and *for* the
+community. Therefore, we are very happy to accept contributions from everyone,
+preferably in the form of a PR.
+
+
 ## Authors
 
-* [Michael Schlottke-Lakemper](https://www.hlrs.de/about-us/organization/divisions-departments/av/tasc/) (University of Stuttgart, Germany)
+This repository is maintained by
+[Michael Schlottke-Lakemper](https://www.hlrs.de/about-us/organization/divisions-departments/av/tasc/)
+(University of Stuttgart, Germany).
 
-## Acknowledgments
-
-These people have provided valuable input to this repository via private communication:
+The following people have provided valuable contributions, either in the form of
+PRs or via private communication:
 * Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
 * Carsten Bauer ([@carstenbauer](https://github.com/carstenbauer))
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
 * Ludovic Räss ([@luraess](https://github.com/luraess))
 * Samuel Omlin ([@omlins](https://github.com/omlins))
+
 
 ## Disclaimer
 
