@@ -98,17 +98,19 @@ NERSC module file setup can be found [here](#modules-file-setup).
 
 
 ### CUDA.jl
-It seems to be generally advisable to set the environment variable
+It seems to be generally advisable to set the environment variables
 ```bash
 JULIA_CUDA_USE_BINARYBUILDER=false
+JULIA_CUDA_USE_MEMORY_POOL=none
 ```
 in the module files when loading Julia on a system with GPUs. Otherwise, Julia
 will try to download its own BinaryBuilder.jl-provided CUDA stack, which is
 typically *not* what you want on a production HPC system. Instead, you should
 make sure that Julia finds the local CUDA installation by setting relevant
 environment variables (see also the
-[CUDA.jl
-docs](https://cuda.juliagpu.org/stable/installation/troubleshooting/#Could-not-find-a-suitable-CUDA-installation)).
+[CUDA.jl docs](https://cuda.juliagpu.org/stable/installation/troubleshooting/#Could-not-find-a-suitable-CUDA-installation)).
+Disabling the memory pool is advisable to make CUDA-aware MPI work on multi-GPU
+nodes (see also the [MPI.jl docs](https://juliaparallel.org/MPI.jl/latest/knownissues/#Hints-to-ensure-CUDA-aware-MPI-to-be-functional)).
 
 
 ### Modules file setup
@@ -121,6 +123,7 @@ through the module mechanism:
 * [`JULIA_DEPOT_PATH`](#julia-depot-path): Ensure depot path is on the correct file
                                            system
 * [`JULIA_CUDA_USE_BINARYBUILDER`](#cudajl): Use system-provided CUDA stack
+* [`JULIA_CUDA_USE_MEMORY_POOL`](#cudajl): Make CUDA-aware MPI work
 
 
 ### Easybuild resources
