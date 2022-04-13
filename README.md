@@ -125,6 +125,7 @@ There are a number of environment variables that should be considered to be set
 through the module mechanism:
 * [`JULIA_DEPOT_PATH`](#julia-depot-path): Ensure depot path is on the correct file
                                            system
+* [`JULIA_MPI_BINARY`](#mpijl): Use system-provided MPI backend
 * [`JULIA_CUDA_USE_BINARYBUILDER`](#cudajl): Use system-provided CUDA stack
 * [`JULIA_CUDA_USE_MEMORY_POOL`](#cudajl): Make CUDA-aware MPI work
 
