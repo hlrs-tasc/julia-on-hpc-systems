@@ -89,7 +89,13 @@ where `$platform` contains the current system name
 
 
 ### MPI.jl
-On the NERSC systems, there is a pre-built MPI.jl for each programming
+It is generally recommended to set
+```
+JULIA_MPI_BINARY=system
+```
+such that MPI.jl will always use a system MPI instead of the Julia artifact (i.e. [MPI_jll.jl](https://github.com/JuliaParallel/MPI.jl)). For more configuration options see [this part](https://juliaparallel.org/MPI.jl/latest/configuration/#environment_variables) of the MPI.jl documentation.
+
+Additionally, on the NERSC systems, there is a pre-built MPI.jl for each programming
 environment, which is loaded through a settings module. More information on the
 NERSC module file setup can be found [here](#modules-file-setup).
 
