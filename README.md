@@ -71,7 +71,7 @@ Unix-like systems: `~/.julia`) should be placed (via [`JULIA_DEPOT_PATH`](https:
 * good (parallel) I/O
 * no tight quotas
 * read and write access
-* shouldn't be automatically wiped on a regular basis (or should be excluded as an exception)
+* no mechanism for the automatic deletion of unused files (or the depot should be excluded as an exception)
 
 On some systems, it resides in the user's home directory (e.g. at NERSC). On other systems, it is put on a parallel scratch file system (e.g. CSCS and PC2). At the time
 of writing (April 2022), there does not seem to be reliable performance data
