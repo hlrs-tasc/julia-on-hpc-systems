@@ -20,7 +20,9 @@ version and the official binaries were found (April 2022).
 
 Since installing from source using, e.g., Spack, can sometimes be cumbersome,
 the general recommendation is to go with the pre-built binaries unless
-benchmarked and found to be different. This is also the current approach taken at NERSC, CSCS, and PC2.
+benchmarked and found to be different.
+
+* This is also the current approach on NERSC's systems
 
 *Last update: April 2022*
 
@@ -66,20 +68,21 @@ requirement, since it is not used universally (e.g., it is not necessary on NERS
 
 
 ### Julia depot path
-Since the available file systems can differ significantly between HPC centers, it is hard to make a general statement about where the Julia depot folder (by default on
-Unix-like systems: `~/.julia`) should be placed (via [`JULIA_DEPOT_PATH`](https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH)).
-Generally speaking, the file system hosting the Julia depot should have
-* good (parallel) I/O
-* no tight quotas
-* read and write access
-* no mechanism for the automatic deletion of unused files (or the depot should be excluded as an exception)
-
-On some systems, it resides in the user's home directory (e.g. at NERSC). On other systems, it is put on a parallel scratch file system (e.g. CSCS and PC2). At the time
+There is no clear consensus where the Julia depot folder (by default on
+Unix-like systems: `~/.julia`) should be located.  On some systems that have
+good I/O connectivity, it resides in the user's home directory, e.g., at NERSC.
+On other systems, e.g., at CSCS, it is put on a scratch file system. At the time
 of writing (April 2022), there does not seem to be reliable performance data
 available that could help to make a data-based decision.
 
-If multiple platforms, e.g., systems with different architecture, would access the same Julia depot, for example because the file system is shared, it might
-make sense to create platform-dependend Julia depots by setting the
+If the depot path, which can be controlled by the
+[`JULIA_DEPOT_PATH`](https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH)
+variable, is located on a scratch/workspace file system with automatic deletion
+of unused files, it must be ensured that there is a mechanism (either
+operator-provided or documented and in userspace) to prevent the deletion of
+files.
+In case multiple platforms share a single home directory, it might
+make sense to make the depot path platform dependend by setting the
 `JULIA_DEPOT_PATH` environment variable appropriately, e.g.,
 ```
 prepend-path JULIA_DEPOT_PATH $env(HOME)/.julia/$platform
@@ -89,7 +92,13 @@ where `$platform` contains the current system name
 
 
 ### MPI.jl
-On the NERSC systems, there is a pre-built MPI.jl for each programming
+It is generally recommended to set
+```
+JULIA_MPI_BINARY=system
+```
+such that MPI.jl will always use a system MPI instead of the Julia artifact (i.e. [MPI_jll.jl](https://github.com/JuliaParallel/MPI.jl)). For more configuration options see [this part](https://juliaparallel.org/MPI.jl/latest/configuration/#environment_variables) of the MPI.jl documentation.
+
+Additionally, on the NERSC systems, there is a pre-built MPI.jl for each programming
 environment, which is loaded through a settings module. More information on the
 NERSC module file setup can be found [here](#modules-file-setup).
 
@@ -158,7 +167,6 @@ installation and/or support for using Julia to its users:
 [NERSC](https://www.nersc.gov) | [Perlmutter](https://www.nersc.gov/systems/perlmutter/) | yes | yes | ? | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia Ampere A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
 [PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 1](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | yes | yes | yes | [Intel Xeon Skylake](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | [Intel Stratix 10](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua1) | [1](https://uni-paderborn.atlassian.net/wiki/spaces/PC2DOK/pages/12878307/Julia)
 [PC², U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | yes | yes | yes | [AMD EPYC Milan](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [Nvidia Ampere A100](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2), [Xilinx Alveo U280](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [1](https://uni-paderborn.atlassian.net/wiki/spaces/PC2DOK/pages/12878307/Julia)
-[RITS, UCL](https://www.ucl.ac.uk/research-it-services/) | [Myriad](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/), [Kathleen](https://www.rc.ucl.ac.uk/docs/Clusters/Kathleen/), [Michael](https://www.rc.ucl.ac.uk/docs/Clusters/Michael/), [Young](https://www.rc.ucl.ac.uk/docs/Clusters/Young/) | yes | yes | ? | various Intel Xeon | various GPUs | [1](https://www.rc.ucl.ac.uk/docs/)
 [ZDV, U Mainz](https://hpc-en.uni-mainz.de/) | [MOGON II](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | yes | ? | ? | [Intel Xeon Broadwell + Skylake](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | no | [1](https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:julia)
 
 **Nomenclature:**
