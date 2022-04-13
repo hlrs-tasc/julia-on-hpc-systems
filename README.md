@@ -78,7 +78,7 @@ On some systems, it resides in the user's home directory (e.g. at NERSC). On oth
 of writing (April 2022), there does not seem to be reliable performance data
 available that could help to make a data-based decision.
 
-If multiple platforms, e.g. systems with different architecture, would access the same Julia depot, for example because the fiile system is shared, it might
+If multiple platforms, e.g., systems with different architecture, would access the same Julia depot, for example because the file system is shared, it might
 make sense to create platform-dependend Julia depots by setting the
 `JULIA_DEPOT_PATH` environment variable appropriately, e.g.,
 ```
