@@ -67,7 +67,8 @@ requirement, since it is not used universally (e.g., it is not necessary on NERS
 
 ### Julia depot path
 Since the available file systems can differ significantly between HPC centers, it is hard to make a general statement about where the Julia depot folder (by default on
-Unix-like systems: `~/.julia`) should be placed (via [`JULIA_DEPOT_PATH`](https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH)). Generally speaking, the file system hosting the the Julia depot should have
+Unix-like systems: `~/.julia`) should be placed (via [`JULIA_DEPOT_PATH`](https://docs.julialang.org/en/v1/manual/environment-variables/#JULIA_DEPOT_PATH)).
+Generally speaking, the file system hosting the Julia depot should have
 * good (parallel) I/O
 * no tight quotas
 * read and write access
