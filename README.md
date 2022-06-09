@@ -204,8 +204,8 @@ PRs or via private communication:
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
 * Ludovic Räss ([@luraess](https://github.com/luraess))
-* Samuel Omlin ([@omlins](https://github.com/omlins))
 * Pedro Ojeda ([@pojeda](https://github.com/pojeda))
+* Samuel Omlin ([@omlins](https://github.com/omlins))
 
 
 ## Disclaimer
