@@ -175,7 +175,7 @@ installation and/or support for using Julia to its users:
 * *Installation:* Is there a pre-installed Julia configuration available?
 * *Support:* Is Julia "officially" supported on the system, i.e., will Julia
 users be supported by HPC center staff if they have questions/problems?
-* *Interactive:* Is interactive computing with Julia supported?
+* *Interactive:* Is interactive computing with Julia supported, i.e., can you run parallel jobs on the system interactively via, e.g., Jupyter notebooks?
 * *Architecture:* The main CPU used in the system
 * *Accelerators:* The main accelerator (if anything) in the system
 * *Documentation:* Links to documentation for Julia users
