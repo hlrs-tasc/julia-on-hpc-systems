@@ -168,6 +168,7 @@ installation and/or support for using Julia to its users:
 [PC2, U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | ✅ | ✅ | ✅ | [AMD EPYC Milan](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [Nvidia Ampere A100](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2), [Xilinx Alveo U280](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [1](https://uni-paderborn.atlassian.net/wiki/spaces/PC2DOK/pages/12878307/Julia)
 [ARC, UCL](https://www.ucl.ac.uk/arc) | [Myriad](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/), [Kathleen](https://www.rc.ucl.ac.uk/docs/Clusters/Kathleen/), [Michael](https://www.rc.ucl.ac.uk/docs/Clusters/Michael/), [Young](https://www.rc.ucl.ac.uk/docs/Clusters/Young/) | ✅ | ✅ | ? | various Intel Xeon | various GPUs | [1](https://www.rc.ucl.ac.uk/docs/)
 [ZDV, U Mainz](https://hpc-en.uni-mainz.de/) | [MOGON II](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | ✅ | ? | ? | [Intel Xeon Broadwell + Skylake](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | no | [1](https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:julia)
+[HPC2N, Umeå U](https://www.hpc2n.umu.se/) | [Kebnekaise](https://www.hpc2n.umu.se/resources/hardware/kebnekaise) | ✅ | ✅ | ? | [Intel Xeon Broadwell + Skylake](https://www.hpc2n.umu.se/resources/hardware/kebnekaise) | [Nvidia Tesla K80](https://www.hpc2n.umu.se/resources/hardware/kebnekaise), [Nvidia Tesla V100](https://www.hpc2n.umu.se/resources/hardware/kebnekaise) | [1](https://www.hpc2n.umu.se/resources/software/julia)
 
 **Nomenclature:**
 * *Center:* The HPC center's name
@@ -203,6 +204,7 @@ PRs or via private communication:
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
 * Ludovic Räss ([@luraess](https://github.com/luraess))
+* Pedro Ojeda ([@pojeda](https://github.com/pojeda))
 * Samuel Omlin ([@omlins](https://github.com/omlins))
 
 
