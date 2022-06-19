@@ -165,6 +165,7 @@ installation and/or support for using Julia to its users:
 [ARC, UCL](https://www.ucl.ac.uk/arc) | [Myriad](https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/), [Kathleen](https://www.rc.ucl.ac.uk/docs/Clusters/Kathleen/), [Michael](https://www.rc.ucl.ac.uk/docs/Clusters/Michael/), [Young](https://www.rc.ucl.ac.uk/docs/Clusters/Young/) | ✅ | ✅ | ? | various Intel Xeon | various GPUs | [1](https://www.rc.ucl.ac.uk/docs/)
 [CSCS](https://www.cscs.ch) | [Piz Daint](https://www.cscs.ch/computers/piz-daint/) | ✅ | ✅ | ✅ | [Intel Xeon Broadwell + Haswell](https://www.cscs.ch/computers/piz-daint/) | [Nvidia Tesla P100](https://www.cscs.ch/computers/piz-daint/) | [1](https://user.cscs.ch/tools/interactive/julia/)
 [DESY IT](https://it.desy.de) | [Maxwell](https://confluence.desy.de/display/MXW/) | ✅ | ? | ✅ | [various AMD EPYC/Intel Xeon](https://confluence.desy.de/display/MXW/Compute+Infrastructure) | [various GPUs](https://confluence.desy.de/display/MXW/Compute+Infrastructure) | [1](https://confluence.desy.de/display/MXW/Julia)
+[FASRC, Harvard U](https://www.rc.fas.harvard.edu) | [Cannon](https://www.rc.fas.harvard.edu/about/cluster-architecture/) | ✅ | ? | ✅ | [Intel Xeon Cascade Lake](https://www.rc.fas.harvard.edu/about/cluster-architecture/) | [Nvidia V100, A100](https://www.rc.fas.harvard.edu/about/cluster-architecture/) | [1](https://portal.rc.fas.harvard.edu/p3/build-reports/julia)
 [HLRS](https://www.hlrs.de) | [Hawk](https://www.hlrs.de/systems/hpe-apollo-hawk/) | ✅ | ✅ | ✅ | [AMD EPYC Rome](https://www.hlrs.de/systems/hpe-apollo-hawk/) | [Nvidia Tesla A100](https://www.hlrs.de/systems/hpe-apollo-hawk/) | [1](https://kb.hlrs.de/platforms/index.php/Julia)
 [HPC @ LLNL](https://hpc.llnl.gov/) | various systems | ✅ | ? | ✅ | various processors | various GPUs | [1](https://hpc.llnl.gov/services/jupyter/julia)
 [HPC2N, Umeå U](https://www.hpc2n.umu.se/) | [Kebnekaise](https://www.hpc2n.umu.se/resources/hardware/kebnekaise) | ✅ | ✅ | ? | [Intel Xeon Broadwell + Skylake](https://www.hpc2n.umu.se/resources/hardware/kebnekaise) | [Nvidia Tesla K80](https://www.hpc2n.umu.se/resources/hardware/kebnekaise), [Nvidia Tesla V100](https://www.hpc2n.umu.se/resources/hardware/kebnekaise) | [1](https://www.hpc2n.umu.se/resources/software/julia)
@@ -177,7 +178,7 @@ installation and/or support for using Julia to its users:
 [ZDV, U Mainz](https://hpc-en.uni-mainz.de/) | [MOGON II](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | ✅ | ? | ? | [Intel Xeon Broadwell + Skylake](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | no | [1](https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:julia)
 
 
-**Nomenclature:**
+#### Nomenclature
 * *Center:* The HPC center's name
 * *System:* The compute system's "marketing" name
 * *Installation:* Is there a pre-installed Julia configuration available?
@@ -187,6 +188,12 @@ users be supported by HPC center staff if they have questions/problems?
 * *Architecture:* The main CPU used in the system
 * *Accelerators:* The main accelerator (if anything) in the system
 * *Documentation:* Links to documentation for Julia users
+
+#### Other HPC systems
+There are a number of other HPC systems that have been reported to provide a Julia installation and/or Julia support, but lack enough details to be put on the list above:
+
+* Arjuna cluster at [CMU](https://www.cmu.edu)
+* Various clusters at [ANL](https://www.anl.gov)
 
 
 ## License and contributing
