@@ -213,6 +213,7 @@ PRs or via private communication:
 * Ludovic Räss ([@luraess](https://github.com/luraess))
 * Pedro Ojeda ([@pojeda](https://github.com/pojeda))
 * Samuel Omlin ([@omlins](https://github.com/omlins))
+* Dinindu Senanayake ([@DininduSenanayake](htts://github.com/DininduSenanayake))
 
 
 ## Disclaimer
