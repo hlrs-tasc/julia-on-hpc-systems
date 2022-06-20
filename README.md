@@ -176,7 +176,7 @@ installation and/or support for using Julia to its users:
 [PC2, U Paderborn](https://pc2.uni-paderborn.de/) | [Noctua 2](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | ✅ | ✅ | ✅ | [AMD EPYC Milan](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [Nvidia Ampere A100](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2), [Xilinx Alveo U280](https://pc2.uni-paderborn.de/hpc-services/available-systems/noctua2) | [1](https://uni-paderborn.atlassian.net/wiki/spaces/PC2DOK/pages/12878307/Julia)
 [ULHPC, U Luxembourg](https://hpc.uni.lu/) | [Aion](https://hpc-docs.uni.lu/systems/aion/), [Iris](https://hpc-docs.uni.lu/systems/iris/) | ✅ | ? | ✅ | [AMD EPYC Rome](https://hpc-docs.uni.lu/systems/aion/) + [Intel Xeon Broadwell/Skylake](https://hpc-docs.uni.lu/systems/iris/) | [Nvidia Tesla V100](https://hpc-docs.uni.lu/systems/iris/) | [1](https://hpc-docs.uni.lu/software/maths/julia/)
 [ZDV, U Mainz](https://hpc-en.uni-mainz.de/) | [MOGON II](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | ✅ | ? | ? | [Intel Xeon Broadwell + Skylake](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | no | [1](https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:julia)
-
+[Carnegie Mellon College of Engineering](https://engineering.cmu.edu) | [Arjuna](https://arjunacluster.github.io/ArjunaUsers/), Hercules | ✅ | ✅  | ✅  | Intel Xeon+AMD EPYC Milan | Nvidia A100, Nvidia K80 | [1](https://arjunacluster.github.io/ArjunaUsers/)
 
 #### Nomenclature
 * *Center:* The HPC center's name
@@ -192,7 +192,6 @@ users be supported by HPC center staff if they have questions/problems?
 #### Other HPC systems
 There are a number of other HPC systems that have been reported to provide a Julia installation and/or Julia support, but lack enough details to be put on the list above:
 
-* Arjuna cluster at [CMU](https://www.cmu.edu)
 * Various clusters at [ANL](https://www.anl.gov)
 
 
