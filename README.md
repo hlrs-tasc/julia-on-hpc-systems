@@ -181,7 +181,6 @@ installation and/or support for using Julia to its users:
 [ZDV, U Mainz](https://hpc-en.uni-mainz.de/) | [MOGON II](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | ✅ | ? | ? | [Intel Xeon Broadwell + Skylake](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | no | [1](https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:julia)
 
 
-
 #### Nomenclature
 * *Center:* The HPC center's name
 * *System:* The compute system's "marketing" name
