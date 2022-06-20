@@ -178,6 +178,7 @@ installation and/or support for using Julia to its users:
 [ZDV, U Mainz](https://hpc-en.uni-mainz.de/) | [MOGON II](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | ✅ | ? | ? | [Intel Xeon Broadwell + Skylake](https://hpc-en.uni-mainz.de/high-performance-computing/systeme/) | no | [1](https://mogonwiki.zdv.uni-mainz.de/dokuwiki/start:development:scripting_languages:julia)
 [Carnegie Mellon College of Engineering](https://engineering.cmu.edu) | [Arjuna](https://arjunacluster.github.io/ArjunaUsers/), Hercules | ✅ | ✅  | ✅  | Intel Xeon+AMD EPYC Milan | Nvidia A100, Nvidia K80 | [1](https://arjunacluster.github.io/ArjunaUsers/)
 [Open Science Grid](https://opensciencegrid.org) | N/A | x | ✅  | ?  | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000632058-computation-on-the-open-science-pool) | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000653025-using-gpus-on-the-ospool) | [1](https://support.opensciencegrid.org/support/solutions/articles/12000078187-using-julia-on-the-ospool)
+[Pittsburgh Supercomputing Center](https://www.psc.edu) | [Bridges-2](https://www.psc.edu/resources/bridges-2/) | ✅ | ✅  | ✅ | [AMD EPYC, Intel Xeon](https://www.psc.edu/resources/bridges-2/) | [Nvidia V100](https://www.psc.edu/resources/bridges-2/) | [1](https://www.psc.edu/resources/software/julia/)
 
 #### Nomenclature
 * *Center:* The HPC center's name
