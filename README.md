@@ -215,15 +215,15 @@ This repository is maintained by
 
 The following people have provided valuable contributions, either in the form of
 PRs or via private communication:
-* Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
 * Carsten Bauer ([@carstenbauer](https://github.com/carstenbauer))
+* Alexander Bills ([@abillscmu](https://github.com/abillscmu))
+* Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
-* Ludovic Räss ([@luraess](https://github.com/luraess))
 * Pedro Ojeda ([@pojeda](https://github.com/pojeda))
 * Samuel Omlin ([@omlins](https://github.com/omlins))
+* Ludovic Räss ([@luraess](https://github.com/luraess))
 * Dinindu Senanayake ([@DininduSenanayake](https://github.com/DininduSenanayake))
-* Alexander Bills ([@abillscmu](https://github.com/abillscmu))
 
 
 ## Disclaimer
