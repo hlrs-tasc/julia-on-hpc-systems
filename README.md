@@ -157,8 +157,17 @@ are useful to set.
 
 ## For users
 ### HPC systems with Julia support
-In the following, we maintain an (incomplete) list of HPC systems that provide a
-Julia installation and/or support for using Julia to its users.
+We maintain an (incomplete) list of HPC systems that provide a
+Julia installation and/or support for using Julia to its users. For this, we use the following <span id="nomenclature">nomenclature</span>:
+* *Center:* The HPC center's name
+* *System:* The compute system's "marketing" name
+* *Installation:* Is there a pre-installed Julia configuration available?
+* *Support:* Is Julia "officially" supported on the system, i.e., will Julia
+users be supported by HPC center staff if they have questions/problems?
+* *Interactive:* Is interactive computing with Julia supported, i.e., can you run parallel jobs on the system interactively via, e.g., Jupyter notebooks?
+* *Architecture:* The main CPU used in the system
+* *Accelerators:* The main accelerator (if anything) in the system
+* *Documentation:* Links to documentation for Julia users
 
 #### Australasia 
 **Center** | **System** | **Installation** | **Support** | **Interactive** | **Architecture** | **Accelerators** | **Documentation**
@@ -190,18 +199,6 @@ Julia installation and/or support for using Julia to its users.
 [NERSC](https://www.nersc.gov) | [Perlmutter](https://www.nersc.gov/systems/perlmutter/) | ✅ | ✅ | ? | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia Ampere A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
 [Open Science Grid](https://opensciencegrid.org) | N/A | ❌ | ✅  | ?  | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000632058-computation-on-the-open-science-pool) | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000653025-using-gpus-on-the-ospool) | [1](https://support.opensciencegrid.org/support/solutions/articles/12000078187-using-julia-on-the-ospool)
 [Pittsburgh Supercomputing Center](https://www.psc.edu) | [Bridges-2](https://www.psc.edu/resources/bridges-2/) | ✅ | ✅  | ✅ | [AMD EPYC, Intel Xeon](https://www.psc.edu/resources/bridges-2/) | [Nvidia V100](https://www.psc.edu/resources/bridges-2/) | [1](https://www.psc.edu/resources/software/julia/)
-
-
-#### Nomenclature
-* *Center:* The HPC center's name
-* *System:* The compute system's "marketing" name
-* *Installation:* Is there a pre-installed Julia configuration available?
-* *Support:* Is Julia "officially" supported on the system, i.e., will Julia
-users be supported by HPC center staff if they have questions/problems?
-* *Interactive:* Is interactive computing with Julia supported, i.e., can you run parallel jobs on the system interactively via, e.g., Jupyter notebooks?
-* *Architecture:* The main CPU used in the system
-* *Accelerators:* The main accelerator (if anything) in the system
-* *Documentation:* Links to documentation for Julia users
 
 #### Other HPC systems
 There are a number of other HPC systems that have been reported to provide a Julia installation and/or Julia support, but lack enough details to be put on the list above:
