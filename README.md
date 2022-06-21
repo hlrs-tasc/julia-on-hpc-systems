@@ -221,6 +221,7 @@ PRs or via private communication:
 * Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
+* Mirek Kratochvíl ([@exaexa](https://github.com/exaexa))
 * Pedro Ojeda ([@pojeda](https://github.com/pojeda))
 * Samuel Omlin ([@omlins](https://github.com/omlins))
 * Ludovic Räss ([@luraess](https://github.com/luraess))
