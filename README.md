@@ -10,7 +10,7 @@ neither for a useful ordering and/or categorization of issues.
 ## For operators
 
 ### Official Julia binaries vs. building from source
-According to 
+According to
 [this Discourse post](https://discourse.julialang.org/t/compiling-julia-using-lto-pgo/39168/5),
 the difference between compiling Julia from source with architecture-specific
 optimization and using the official Julia binaries is negligible.
@@ -169,7 +169,7 @@ users be supported by HPC center staff if they have questions/problems?
 * *Accelerators:* The main accelerator (if anything) in the system
 * *Documentation:* Links to documentation for Julia users
 
-#### Australasia 
+#### Australasia
 **Center** | **System** | **Installation** | **Support** | **Interactive** | **Architecture** | **Accelerators** | **Documentation**
 -----|-----|-----|-----|-----|-----|-----|-----
 [NeSI](https://www.nesi.org.nz/) | [Mahuika, Māui](https://www.nesi.org.nz/services/high-performance-computing-and-analytics/platforms) | ✅ | ✅ | ✅ | [Intel Xeon Broadwell/Cascade Lake + AMD EPYC Milan](https://www.nesi.org.nz/services/high-performance-computing-and-analytics/platforms) | [Nvidia Tesla P100, A100](https://support.nesi.org.nz/hc/en-gb/articles/360001471955) | [1](https://support.nesi.org.nz/hc/en-gb/articles/360001175895-Julia)
@@ -193,12 +193,14 @@ users be supported by HPC center staff if they have questions/problems?
 **Center** | **System** | **Installation** | **Support** | **Interactive** | **Architecture** | **Accelerators** | **Documentation**
 -----|-----|-----|-----|-----|-----|-----|-----
 [Carnegie Mellon College of Engineering](https://engineering.cmu.edu) | [Arjuna](https://arjunacluster.github.io/ArjunaUsers/), Hercules | ✅ | ✅  | ✅  | Intel Xeon+AMD EPYC Milan | Nvidia A100, Nvidia K80 | [1](https://arjunacluster.github.io/ArjunaUsers/)
+[Dartmouth College](https://dartmouth.edu) | [Discovery](https://services.dartmouth.edu/TDClient/1806/Portal/KB/ArticleDet?ID=134058) | ✅ | ? | ✅  | Intel Xeon (various) + AMD EPYC 7532 | Nvidia V100 | [1](https://rc.dartmouth.edu/index.php/discovery-overview/)
 [FASRC, Harvard U](https://www.rc.fas.harvard.edu) | [Cannon](https://www.rc.fas.harvard.edu/about/cluster-architecture/) | ✅ | ? | ✅ | [Intel Xeon Cascade Lake](https://www.rc.fas.harvard.edu/about/cluster-architecture/) | [Nvidia V100, A100](https://www.rc.fas.harvard.edu/about/cluster-architecture/) | [1](https://portal.rc.fas.harvard.edu/p3/build-reports/julia)
 [HPC @ LLNL](https://hpc.llnl.gov/) | various systems | ✅ | ? | ✅ | various processors | various GPUs | [1](https://hpc.llnl.gov/services/jupyter/julia)
 [NERSC](https://www.nersc.gov) | [Cori](https://www.nersc.gov/systems/cori/) | ✅ | ? | ? | [Intel Xeon Haswell](https://docs.nersc.gov/systems/cori/#system-specification) | [Intel Xeon Phi](https://docs.nersc.gov/systems/cori/#system-specification) | [1](https://docs.nersc.gov/development/languages/julia/)
 [NERSC](https://www.nersc.gov) | [Perlmutter](https://www.nersc.gov/systems/perlmutter/) | ✅ | ✅ | ? | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia Ampere A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
 [Open Science Grid](https://opensciencegrid.org) | N/A | ❌ | ✅  | ?  | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000632058-computation-on-the-open-science-pool) | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000653025-using-gpus-on-the-ospool) | [1](https://support.opensciencegrid.org/support/solutions/articles/12000078187-using-julia-on-the-ospool)
 [Pittsburgh Supercomputing Center](https://www.psc.edu) | [Bridges-2](https://www.psc.edu/resources/bridges-2/) | ✅ | ✅  | ✅ | [AMD EPYC, Intel Xeon](https://www.psc.edu/resources/bridges-2/) | [Nvidia V100](https://www.psc.edu/resources/bridges-2/) | [1](https://www.psc.edu/resources/software/julia/)
+
 
 #### Other HPC systems
 There are a number of other HPC systems that have been reported to provide a Julia installation and/or Julia support, but lack enough details to be put on the list above:
