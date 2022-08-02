@@ -239,6 +239,7 @@ PRs or via private communication:
 * Pedro Ojeda ([@pojeda](https://github.com/pojeda))
 * Samuel Omlin ([@omlins](https://github.com/omlins))
 * Ludovic Räss ([@luraess](https://github.com/luraess))
+* Erik Schnetter ([@eschnett](https://github.com/eschnett))
 * Dinindu Senanayake ([@DininduSenanayake](https://github.com/DininduSenanayake))
 * Kjartan Thor Wikfeldt ([@wikfeldt](https://github.com/wikfeldt))
 
