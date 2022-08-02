@@ -198,8 +198,8 @@ users be supported by HPC center staff if they have questions/problems?
 [NERSC](https://www.nersc.gov) | [Cori](https://www.nersc.gov/systems/cori/) | ✅ | ? | ? | [Intel Xeon Haswell](https://docs.nersc.gov/systems/cori/#system-specification) | [Intel Xeon Phi](https://docs.nersc.gov/systems/cori/#system-specification) | [1](https://docs.nersc.gov/development/languages/julia/)
 [NERSC](https://www.nersc.gov) | [Perlmutter](https://www.nersc.gov/systems/perlmutter/) | ✅ | ✅ | ? | [AMD EPYC Milan](https://docs.nersc.gov/systems/perlmutter/system_details/#cpus) | [Nvidia Ampere A100](https://docs.nersc.gov/systems/perlmutter/system_details/#gpus) | [1](https://docs.nersc.gov/development/languages/julia/), [2](https://docs.nersc.gov/performance/readiness/#julia)
 [Open Science Grid](https://opensciencegrid.org) | N/A | ❌ | ✅  | ?  | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000632058-computation-on-the-open-science-pool) | [Various](https://support.opensciencegrid.org/support/solutions/articles/5000653025-using-gpus-on-the-ospool) | [1](https://support.opensciencegrid.org/support/solutions/articles/12000078187-using-julia-on-the-ospool)
+[Perimeter Institute for Theoretical Physics](https://perimeterinstitute.ca) | Symmetry | ✅ | ✅  | ✅ | AMD EPYC, Intel Xeon | Nvidia V100 | -
 [Pittsburgh Supercomputing Center](https://www.psc.edu) | [Bridges-2](https://www.psc.edu/resources/bridges-2/) | ✅ | ✅  | ✅ | [AMD EPYC, Intel Xeon](https://www.psc.edu/resources/bridges-2/) | [Nvidia V100](https://www.psc.edu/resources/bridges-2/) | [1](https://www.psc.edu/resources/software/julia/)
-[Perimeter Institute for Theoretical Physics](https://perimeterinstitute.ca) | Symmetry | ✅ | ✅  | ✅ | AMD EPYC, Intel Xeon | Nvidia V100 |
 
 #### Other HPC systems
 There are a number of other HPC systems that have been reported to provide a Julia installation and/or Julia support, but lack enough details to be put on the list above:
