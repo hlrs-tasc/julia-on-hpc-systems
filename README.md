@@ -234,6 +234,7 @@ PRs or via private communication:
 * Alexander Bills ([@abillscmu](https://github.com/abillscmu))
 * Johannes Blaschke ([@jblaschke](https://github.com/jblaschke))
 * Valentin Churavy ([@vchuravy](https://github.com/vchuravy))
+* Steffen Fürst ([@s-fuerst](https://github.com/s-fuerst))
 * Mosè Giordano ([@giordano](https://github.com/giordano))
 * C. Brenhin Keller ([@brenhinkeller](https://github.com/brenhinkeller))
 * Mirek Kratochvíl ([@exaexa](https://github.com/exaexa))
