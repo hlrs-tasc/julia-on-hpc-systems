@@ -225,8 +225,8 @@ preferably in the form of a PR.
 ## Authors
 
 This repository is maintained by
-[Michael Schlottke-Lakemper](https://www.hlrs.de/about-us/organization/divisions-departments/av/tasc/)
-(University of Stuttgart, Germany).
+[Michael Schlottke-Lakemper](https://lakemper.eu)
+(RWTH Aachen University, Germany).
 
 The following people have provided valuable contributions, either in the form of
 PRs or via private communication:
