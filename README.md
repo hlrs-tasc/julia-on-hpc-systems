@@ -1,5 +1,11 @@
 # Julia on HPC systems
 
+---
+
+**Note: This repository is no longer maintained. More and up-to-date information on using Julia for HPC can be found on the new site at https://juliahpc.github.io/JuliaOnHPCClusters/, which includes the contents of this repository.**
+
+---
+
 The purpose of this repository is to document best practices for running Julia
 on HPC systems (i.e., "supercomputers"). At the moment, both information
 relevant for supercomputer operators as well as users is collected here.
